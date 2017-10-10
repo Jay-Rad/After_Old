@@ -4,6 +4,7 @@
 /After/wwwroot/Data/Errors/*
 /After/wwwroot/Data/ClientErrors/*
 /After/wwwroot/Data/Storage/*
+/After/wwwroot/Data/Logs/*
 
 # User-specific files
 *.suo
