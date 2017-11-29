@@ -44,7 +44,7 @@ namespace After.Message_Handlers
                     Description = "This is a plane of existence that lies within your own soul.",
                     OwnerID = username,
                     IsStatic = true,
-                    StorageID = player.CurrentXYZ,
+                    StorageID = $"0,0,{player.Name}-0",
                     LastVisited = DateTime.Now,
                     Color = player.Color
                 };
@@ -52,7 +52,7 @@ namespace After.Message_Handlers
                 var landMark = new Landmark()
                 {
                     Color = player.Color,
-                    StorageID = player.CurrentXYZ,
+                    StorageID = $"0,0,{player.Name}-0",
                     FontSize = 100,
                     Text = $"{username}'s Inner Void"
                 };
@@ -62,7 +62,7 @@ namespace After.Message_Handlers
                     Name = "Norahc",
                     DisplayName = "Norahc",
                     StorageID = Guid.NewGuid().ToString(),
-                    CurrentXYZ = player.CurrentXYZ,
+                    CurrentXYZ = $"0,0,{player.Name}-0",
                     Color = "lightsteelblue",
                     CoreEnergy = 50000,
                     ViewDistance = 5,
